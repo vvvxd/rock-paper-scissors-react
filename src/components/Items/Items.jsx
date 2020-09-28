@@ -6,16 +6,25 @@ import scissors from '../../images/icon-scissors.svg'
 
 import './Items.scss'
 
-const Items = () => {
+const Items = ({setActiveItem}) => {
     return (
         <div className='game__items'>
-            <div className="game__items-paper ">
+            <div
+                onClick={()=>setActiveItem('paper')}
+                className="game__items-paper"
+            >
                 <img src={paper} alt=""/>
             </div>
-            <div className="game__items-rock">
+            <div
+                onClick={()=>setActiveItem('rock')}
+                className="game__items-rock"
+            >
                 <img src={rock} alt=""/>
             </div>
-            <div className="game__items-scissors ">
+            <div
+                onClick={()=>setActiveItem('scissors')}
+                className="game__items-scissors"
+            >
                 <img src={scissors} alt=""/>
             </div>
         </div>
