@@ -3,8 +3,9 @@
 # dependencies
 /node_modules
 /.pnp
+/rock-paper-scissors-master
 .pnp.js
-
+/.idea
 # testing
 /coverage
 

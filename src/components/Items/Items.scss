@@ -1,0 +1,75 @@
+
+.game__items {
+  $self: &;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  box-sizing: border-box;
+
+  &-rock {
+    border: 15px solid #6495ed;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 50px;
+    align-self: flex-end;
+    box-shadow: 0px 8px 0px -1px #2642bf;
+    cursor: pointer;
+    &:hover {
+      background: #eeeeee;
+      border-color: #5d8ce2;
+    }
+    &:active{
+      background: #d4d4d4;
+      border-color: #537dc8;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &-paper {
+    border: 15px solid #ea1313;
+    cursor: pointer;
+    border-radius: 50%;
+    background: white;
+    padding: 50px;
+    box-shadow: 0px 8px 0px -1px #991635;
+    align-self: flex-start;
+    &:hover {
+      background: #eeeeee;
+      border-color: #d91212;
+    }
+    &:active{
+      background: #d4d4d4;
+      border-color: #bf1111;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &-scissors {
+    border: 15px solid #d0a31c;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0px 8px 0px -1px #cc6d1b;
+    align-self: flex-start;
+    padding: 50px;
+    &:hover {
+      background: #eeeeee;
+      border-color: #b79118;
+    }
+    &:active{
+      background: #d4d4d4;
+      border-color: #9b7a15;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

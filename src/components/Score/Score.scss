@@ -1,0 +1,23 @@
+.game__score{
+  border: 2px solid white;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  &-num{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color:  hsl(215, 47%, 35%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 25px 10px 25px;
+    strong{
+      margin-top: 10px;
+      font-size: 50px;
+    }
+  }
+}
