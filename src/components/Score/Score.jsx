@@ -4,7 +4,7 @@ import './Score.scss'
 import logo from '../../images/logo.svg'
 
 
-const Score = () => {
+const Score = ({score}) => {
     return (
         <div className="game__score">
             <img src={logo} alt="qwe"/>
@@ -13,7 +13,7 @@ const Score = () => {
                     score
                 </span>
                 <strong>
-                    10
+                    {score}
                 </strong>
             </div>
         </div>
